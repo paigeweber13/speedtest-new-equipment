@@ -1,0 +1,14 @@
+Closest servers:
+
+    ID  Name                           Location             Country
+==============================================================================
+ 14757  Pineville Communication Systems Pineville, NC        United States
+ 12784  Comporium                      Rock HIll, SC        United States
+  5028  AT&T                           Charlotte, NC        United States
+  4211  Spirit Communications          Charlotte, NC        United States
+ 27833  Windstream                     Charlotte, NC        United States
+ 24421  Sandhill Telephone Cooperative Jefferson, SC        United States
+ 15380  TruVista                       Chester, SC          United States
+  3383  Continuum                      Mooresville, NC      United States
+ 26613  Sandhill Telephone Cooperative Cheraw, SC           United States
+  4265  Spirit Communications          Columbia, SC         United States
