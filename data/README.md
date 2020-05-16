@@ -13,3 +13,6 @@ admin panel so I couldn't properly configure it.
 ## 01-new-switch.csv
 Replaced the router that was acting as a switch with a TP-Link TL-SG105, a
 5-port gigabit switch.
+
+## 02-new-cable.csv
+Replaced cat 5e cable with cat 6 cable.
