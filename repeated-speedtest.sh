@@ -6,7 +6,7 @@
 # to see list of servers, run "speedtest -L". These are at or close to
 # Charlotte, NC
 SERVERS="4211 5028 12784"
-NUM_TRIALS=10
+NUM_TRIALS=4
 
 # first test will use automatically chosen "best server"
 speedtest --output-header -f csv
