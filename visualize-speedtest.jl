@@ -1,4 +1,5 @@
 using CSV
+using Dates
 using Plots
 
 function load_data()
@@ -41,10 +42,10 @@ function convert_speedtest_up_down_to_mbits_per_s!(data)
   for i = 1:size(data)[1]
     for metric in metrics
       metric_data = getproperty(data[i], metric)
-      println(metric_data)
+      # println(metric_data)
       converted_data = bytes_to_mbits.(metric_data)
-      println(converted_data)
-      println(data[i])
+      # println(converted_data)
+      # println(data[i])
 
       # doesn't work
       # setproperty!(data[i], metric, converted_data)
@@ -83,26 +84,30 @@ function plot_data(file_names,
   # set backend
   gr()
 
-  println(x)
-  println(y)
+  # println(x)
+  # println(y)
 
   # create plot
   plot(x, y,
     seriestype = :scatter, 
     title = "Internet speeds after different upgrades",
+    xaxis = (tickfontrotation = 45.0),
     xlabel = "Upgrade and metric",
     ylabel = "Value",
-    dpi = 700,
-    ylims = (0.0, 100),
+    size = (1200, 800),
+    # dpi = 350,
+    # ylims = (0.0, 100),
     legend = false,
+
     # markersize = 1,
     # markeralpha = 1,
     # markeralpha = 0.1,
     # markerstrokestyle = :dot,
     # markerstrokecolor = :blue,
     # markerstrokewidth = 0,
-    markerfillcolor = :blue,
+    # markerfillcolor = :blue,
   )
   
-  savefig("plots/result.png")
+  filename = string("plots/result", Dates.format(Dates.now(), "Y-mm-dd_HHMM") ,".png")
+  savefig(filename)
 end
