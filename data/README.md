@@ -16,3 +16,16 @@ Replaced the router that was acting as a switch with a TP-Link TL-SG105, a
 
 ## 02-new-cable.csv
 Replaced cat 5e cable with cat 6 cable.
+
+## 03-wifi-no-antennae.csv
+Added a wifi card, the TP-Link Archer TX3000E AX3000 PCIe card. I didn't 
+attach any antennae for this test.
+
+## 031-wifi-short-antennae.csv
+Added the included antennae directly to the wireless card, so it was tucked 
+away behind my computer (presumably with poor reception)
+
+## 05-wifi-external-antennae.csv
+For this test, I used the included antennae extension thing to put the 
+antennae on top of my case.
+
